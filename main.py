@@ -47,7 +47,7 @@ def game_over():
     leaf.color('yellow')
     t.penup()
     t.hideturtle()
-    t.write('Game Over!', align = 'center',  font=('Arial', 30, 'normal'))
+    t.write("Game Over! Your Score -"+str(score), align = 'center',  font=('Arial', 30, 'normal'))
 
 
 def display_score(score):
@@ -125,5 +125,3 @@ t.onkey(move_left, 'Left')
 t.onkey(move_right, 'Right')
 t.listen()
 t.mainloop()
-
-
